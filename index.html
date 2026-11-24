@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inglés 4.º ESO · Apuntes interactivos</title>
+<link rel="stylesheet" href="estilos.css"></head><body>
+<nav id="nav"></nav>
+<main>
+<section id="vocab"><h2>Vocabulario</h2>
+<div class="card"><div class="row"><input type="search" id="q" placeholder="Buscar palabra…" oninput="rv()"><select id="cat" onchange="rv()"></select>
+<button class="b s" onclick="allT(true)">Mostrar todas las traducciones</button><button class="b s" onclick="allT(false)">Ocultar todas</button></div>
+<p id="pct" style="margin:10px 0 4px;font:14px system-ui"></p><div class="bar"><i id="pb"></i></div></div>
+<div class="grid" id="vg"></div>
+</section>
+
+<section id="gram"><h2>Gramática</h2><p>Antes de elegir el tiempo, pregúntate: <b>¿cuándo ocurre la acción?</b> ¿Terminó en un momento concreto, tiene relación con ahora, empezó antes y sigue, o pasó antes que otra acción del pasado?</p><div id="gd"></div>
+<h2>Tabla comparativa</h2><div class="wrap"><table id="tb"></table></div><div id="dif"></div></section>
+
+<section id="irr"><h2>Verbos irregulares</h2><div class="card"><input type="search" id="iq" placeholder="Buscar verbo…" oninput="ri()"><p class="tag">Pasado = Past Simple. Participio = Present Perfect y Past Perfect (have / has / had + participio).</p></div><div class="wrap"><table id="it"></table></div></section>
+<section id="irrp"><h2>Rellena la tabla de verbos irregulares</h2><div class="card row"><select id="im" onchange="ni()"><option value="1">Te doy el infinitivo o el significado (al azar)</option><option value="2">Solo te doy el infinitivo</option><option value="3">Solo te doy el significado</option></select><button class="b" onclick="ni()">Nueva tabla</button></div><div class="wrap"><table id="ip"></table></div><div class="row" style="margin-top:10px"><button class="b" onclick="ci()">Comprobar tabla</button></div><div id="ir"></div></section>
+<section id="prac"><h2>Ejercicios de práctica</h2><p>Respuesta con corrección inmediata. En los huecos, escribe la forma completa (se aceptan contracciones).</p><div id="pd"></div></section>
+
+<section id="exam"><h2>Simulacros de examen</h2><div id="ed"></div></section>
+</main>
+<script src="script.js"></script></body></html>
